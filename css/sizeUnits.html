@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .parent {
+        background: #d60e0e;
+        width: 50%;
+        /* first prent might have got background colour , then child got background clour , as both are block element they are taking 100% width , and overlapping each other */
+      }
+      .child {
+        background: #fecaca;
+        width: 50%;
+        /* the clid will take percent of the width of parent element */
+        /* when the prent width is 50% , the child width is 50% of parent width */
+      }
+      /* conclusion:the width % is decided by the width  of its parent tag */
+
+      .box {
+        border: 2px solid red;
+        height: 100vh;
+        /* vh is the view port height and vw is the view port width */
+      }
+    
+
+      .wrapper {
+        font-size: 10px;
+      }
+      .boxpx{
+        font-size: 10px;
+      }
+      .boxem{
+        font-size: 10em;
+      }
+      .boxvm{
+        font-size: 10px;
+
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">my name is netra</div>
+    </div>
+    <div class="box">
+      <h1>netra</h1>
+    </div>
+    <div class="wrapper">
+      <div class="boxpx">I am 10px wide</div>
+      <div class="boxvw">I am 10vw wide</div>
+      <div class="boxem">I am 10em wide</div>
+      <!-- em is the parent class used unit*whaterver em u have give -->
+       <!-- if parent has size of 10px and child has size of 10 em , so 10 em means 10*10  -->
+       <!-- if parent is empty , the default em size is 16px -->
+    </div>
+  </body>
+
+  <!-- ppi:pixel per inches , it is used in screen -->
+   <!-- dpi:dot per inches,it is used for printing -->
+</html>
