@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        .d{
             border-style: solid;
             border-color: red;
             border-width: 2px;
+            height: 800px;
+            background: #da6d6d;
         }
         .img1{
             position: relative;
@@ -26,6 +28,20 @@
             top: 30px;
             /* As in relative postion, the gap was getting mainted, the gap is not mainted in absolute */
 
+        }
+        .img4{
+            position: fixed;
+            /* fixed postion means even if we scorll the postion will be fixed  */
+        }
+        .box{
+            height: 5000px;
+            background: red;
+        }
+        .img3{
+            position: sticky;
+            top: 100px;
+            /* the difference between sticky ane fixed is , the fixed postion will be fixed for all parent tags ,but the sticky will be fixed for its parent tag only */
+            /* example,image 4 is fixed in div with class box , but the sticky is fixed in div class d only , and not fixed in div class box */
         }
     </style>
 </head>
@@ -60,6 +76,10 @@
         class="img4"
         >
     </div>
+    <div class="box">
+
+    </div>
+
     
 </body>
 </html>
