@@ -1,0 +1,15 @@
+ h1{      /*selector : id, class,element,group*/
+    background-color: antiquewhite;
+}
+#para{
+    color: brown;
+}
+.p{
+    background-color: aquamarine;
+}
+p,h1{
+    width: 500px;
+}
+p.p{
+    text-align: center;
+}

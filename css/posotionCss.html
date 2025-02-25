@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border-style: solid;
+            border-color: red;
+            border-width: 2px;
+        }
+        .img1{
+            position: relative;
+            /* default value of positon is static , so if we try to move it without setting postion value of relative , the object will not move */
+            /* relative means we are positioning object relative to the current window size */
+            /* the space from where we shifted the object will remain intact , it will not chnage */
+            top: 100px;
+            /* will shift ibject 100px from top */
+        }
+        .img2{
+            position: absolute;
+            /* As in relative the position chnages accoring to the window , in absolute the postion chnages according to the parent tag */
+            /* example here imgae 2 is chnages postion relative  to the parent tag div  */
+            /* it is used for overlapping also */
+            top: 30px;
+            /* As in relative postion, the gap was getting mainted, the gap is not mainted in absolute */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="d">
+        <img 
+        src="img/download (1).jpeg"
+        alt="img1"
+        height="100px"
+        width="100px"
+        class="img1"
+        >
+
+        <img src="img/download.jpeg"
+        alt="image2"
+        height="100px"
+        width="100px"
+        class="img2"
+        >
+
+        <img src="img/OIP (1).jpeg"
+        alt="image3"
+        height="100px"
+        width="100px"
+        class="img3"
+        >
+
+        <img src="img/OIP.jpeg"
+        alt="image4"
+        height="100px"
+        width="100px"
+        class="img4"
+        >
+    </div>
+    
+</body>
+</html>

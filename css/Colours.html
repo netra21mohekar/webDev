@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* when we add padding or margin or border , the default size increases ,but when we use the box-sizing = border box, the content gets shrink , and the overall size remains same  */
+            /* Prevents unexpected size changes – No need to adjust width manually when adding padding/border.
+✅ Simplifies layout calculations – Keeps designs more consistent.
+✅ Works better with flexible layouts – Useful for responsive designs and grid systems. */
+        }
+        p{
+            font-style: italic;
+            font-family: "Sigmar", serif;
+            font-size: larger;
+            /* one pixel is of 1.96inche (0.26mm) */
+            font-weight: 10px;  /* define thickness*/
+            line-height: 30px;  /* gap between 2 lines */
+            border-width:5px;
+        }
+        #first{
+            color: rgb(5, 5, 97);
+            background-color: rgb(241, 17, 103);
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(18, 2, 199);
+            border-radius: 20px;
+            /* padding: 30px; */
+            margin: 20px;
+            padding: 12px,30px,24px,34px;
+            padding: 20px,40px;
+            margin-top: 30px;
+
+        }
+        #second{
+            background-color: rgb(221, 138, 138);
+            border-width: 200px;
+            
+        }
+        #third{
+            background-color: rgba(109, 197, 154, 0.831);
+            /* rgba is red green blue and alpha , alpha is the tranpecany level */
+        }
+        
+        #four{
+            background-color: hsla(20, 24%, 60%, 0.557);   
+            /* hsl-hue is the colour , s is saturation means its intensity , and lightness , a is alpha , the opacity or transparecy */
+        }
+        span{
+            background-color: blueviolet;
+            height: 30px;
+            /* The <span> tag is an inline element by default, and in CSS, inline elements do not accept width and height properties. Instead, their dimensions are determined by their content. */
+        }
+
+    </style>
+</head>
+<body>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia voluptatem nihil. Sunt, tempore fuga! Incidunt reiciendis deleniti omnis repellendus totam iusto ratione eum eos ipsum dolorem tempore ducimus laborum iste, suscipit obcaecati facere impedit nam id aperiam possimus in consequatur laboriosam. Tenetur ullam autem quidem architecto, aperiam commodi reiciendis?
+    </p>
+    <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, odio?</p>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta, magnam beatae nobis ipsum nulla consectetur aliquid eos vitae modi fugit placeat illo quidem tenetur quas ratione dolore eligendi. Minima, cumque perferendis! Veritatis impedit repudiandae molestiae, totam aperiam deserunt error qui fuga harum delectus aut officia, minus quo, at saepe voluptatum consectetur magnam dolore excepturi doloribus? Omnis accusantium cumque hic.</p>
+    <p id="four">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus repudiandae quia quos maiores, voluptatum, quasi voluptates delectus nobis exercitationem optio est facere amet. Magnam fugit quisquam placeat, dolorum neque quasi?</p>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, hic.</span>
+</body>
+</html>

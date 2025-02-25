@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid rebeccapurple;
+            /* div ,p,h1 etc are block elements means the default space it take are from extreme left to extreme right */
+            width: 200px;
+            /* it also respect constuom width ,height ,margin ,padding, if we define the particular value */
+
+        }
+        span{
+            border-color: red;
+            border: 2px;
+            display: block;
+            display: inline-block; /* behave like inline , but we can give costume padding , margin , height, width */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>my name is netra</h1>
+    </div>
+    <div>
+        <h1>my name is pratik</h1>
+    </div>
+    <span>
+        <!-- span is inline element
+         Inline element try to come in same line 
+         we cannot apply costomue width and height for inline elements
+         costume margins cannot be applied for vertically , padding can be applied
+         we can change inline element to block element
+          -->
+        my name is sakshi
+    </span>
+    <span>
+        my name is sakshi
+    </span>
+</body>
+</html>
